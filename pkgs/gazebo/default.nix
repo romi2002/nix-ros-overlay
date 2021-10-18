@@ -64,7 +64,7 @@ mkDerivation rec {
     protobuf
     sdformat
     tbb
-    ogre1_10
+    ogre1_9
     ffmpeg
     ignition-math
     ignition-transport
