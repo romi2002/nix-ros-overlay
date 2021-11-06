@@ -2,20 +2,20 @@
 # Copyright 2021 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
-{ lib, buildRosPackage, fetchurl, ament-cmake, ament-lint-auto, ament-lint-common, geometry-msgs, launch, launch-ros, rclcpp, tf2, tf2-ros, turtlesim }:
+{ lib, buildRosPackage, fetchurl, ament-cmake, ament-lint-auto, ament-lint-common, geometry-msgs, launch, launch-ros, message-filters, rclcpp, tf2, tf2-geometry-msgs, tf2-ros, turtlesim }:
 buildRosPackage {
   pname = "ros-foxy-turtle-tf2-cpp";
-  version = "0.3.2-r1";
+  version = "0.3.4-r1";
 
   src = fetchurl {
-    url = "https://github.com/ros-gbp/geometry_tutorials-release/archive/release/foxy/turtle_tf2_cpp/0.3.2-1.tar.gz";
-    name = "0.3.2-1.tar.gz";
-    sha256 = "34c2f80aa0a0713a485f087a0688e511afbe6a2d743f66b7ee649180786563e1";
+    url = "https://github.com/ros-gbp/geometry_tutorials-release/archive/release/foxy/turtle_tf2_cpp/0.3.4-1.tar.gz";
+    name = "0.3.4-1.tar.gz";
+    sha256 = "02ee422d0cbe4096072a5d33a32132e614e88f2643dd871d616ab43c7071dc58";
   };
 
   buildType = "ament_cmake";
   checkInputs = [ ament-lint-auto ament-lint-common ];
-  propagatedBuildInputs = [ geometry-msgs launch launch-ros rclcpp tf2 tf2-ros turtlesim ];
+  propagatedBuildInputs = [ geometry-msgs launch launch-ros message-filters rclcpp tf2 tf2-geometry-msgs tf2-ros turtlesim ];
   nativeBuildInputs = [ ament-cmake ];
 
   meta = {

@@ -5,12 +5,12 @@
 { lib, buildRosPackage, fetchurl, ament-cmake, ament-cmake-gtest, ament-cmake-pytest, ament-cmake-python, builtin-interfaces, geometry-msgs, message-filters, python-cmake-module, rcl-interfaces, rclcpp, rclcpp-action, rclcpp-components, rclpy, std-msgs, tf2, tf2-msgs, tf2-py }:
 buildRosPackage {
   pname = "ros-foxy-tf2-ros";
-  version = "0.13.10-r1";
+  version = "0.13.12-r1";
 
   src = fetchurl {
-    url = "https://github.com/ros2-gbp/geometry2-release/archive/release/foxy/tf2_ros/0.13.10-1.tar.gz";
-    name = "0.13.10-1.tar.gz";
-    sha256 = "601e1056ec032863b9d848022531425ebb0ea7c5e67748d19403f34237c6db01";
+    url = "https://github.com/ros2-gbp/geometry2-release/archive/release/foxy/tf2_ros/0.13.12-1.tar.gz";
+    name = "0.13.12-1.tar.gz";
+    sha256 = "21a3ead1f3e799d872883098c3061ed9c96dd9240a5c6bb67e82f409bef472a9";
   };
 
   buildType = "ament_cmake";

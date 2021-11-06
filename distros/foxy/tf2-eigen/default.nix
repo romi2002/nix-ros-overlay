@@ -5,12 +5,12 @@
 { lib, buildRosPackage, fetchurl, ament-cmake, ament-cmake-gtest, eigen, eigen3-cmake-module, geometry-msgs, tf2, tf2-ros }:
 buildRosPackage {
   pname = "ros-foxy-tf2-eigen";
-  version = "0.13.10-r1";
+  version = "0.13.12-r1";
 
   src = fetchurl {
-    url = "https://github.com/ros2-gbp/geometry2-release/archive/release/foxy/tf2_eigen/0.13.10-1.tar.gz";
-    name = "0.13.10-1.tar.gz";
-    sha256 = "4eaf920a4265a55b7989c7faed6ef4206b18fed70d07823d022262b8b6e85854";
+    url = "https://github.com/ros2-gbp/geometry2-release/archive/release/foxy/tf2_eigen/0.13.12-1.tar.gz";
+    name = "0.13.12-1.tar.gz";
+    sha256 = "8e60acbeb6909956ee3d7e8ca0cebd75eed93d647a5ef48c1b8b9761f6144eb6";
   };
 
   buildType = "ament_cmake";

@@ -2,19 +2,19 @@
 # Copyright 2021 Open Source Robotics Foundation
 # Distributed under the terms of the BSD license
 
-{ lib, buildRosPackage, fetchurl, catkin, rokubimini, rokubimini-bus-manager, rokubimini-msgs, soem }:
+{ lib, buildRosPackage, fetchurl, catkin, ethercat-grant, rokubimini, rokubimini-bus-manager, rokubimini-msgs, soem }:
 buildRosPackage {
   pname = "ros-noetic-rokubimini-ethercat";
-  version = "0.6.0-r3";
+  version = "0.6.1-r2";
 
   src = fetchurl {
-    url = "https://gitlab.com/botasys/bota_driver-release/-/archive/release/noetic/rokubimini_ethercat/0.6.0-3/bota_driver-release-release-noetic-rokubimini_ethercat-0.6.0-3.tar.gz";
-    name = "bota_driver-release-release-noetic-rokubimini_ethercat-0.6.0-3.tar.gz";
-    sha256 = "d92e8223000be4d87f5be597201f7f9f574492ea417f41186f8b6469d82ec18b";
+    url = "https://gitlab.com/botasys/bota_driver-release/-/archive/release/noetic/rokubimini_ethercat/0.6.1-2/bota_driver-release-release-noetic-rokubimini_ethercat-0.6.1-2.tar.gz";
+    name = "bota_driver-release-release-noetic-rokubimini_ethercat-0.6.1-2.tar.gz";
+    sha256 = "f45d85861851179df943fb6dd0908004d15513782b1b8aaa51fcc35b7f188124";
   };
 
   buildType = "catkin";
-  propagatedBuildInputs = [ rokubimini rokubimini-bus-manager rokubimini-msgs soem ];
+  propagatedBuildInputs = [ ethercat-grant rokubimini rokubimini-bus-manager rokubimini-msgs soem ];
   nativeBuildInputs = [ catkin ];
 
   meta = {

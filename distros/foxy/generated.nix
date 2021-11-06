@@ -24,6 +24,8 @@ self: super: {
 
  ament-cmake-auto = self.callPackage ./ament-cmake-auto {};
 
+ ament-cmake-catch2 = self.callPackage ./ament-cmake-catch2 {};
+
  ament-cmake-clang-format = self.callPackage ./ament-cmake-clang-format {};
 
  ament-cmake-clang-tidy = self.callPackage ./ament-cmake-clang-tidy {};
@@ -138,6 +140,8 @@ self: super: {
 
  apriltag = self.callPackage ./apriltag {};
 
+ asio-cmake-module = self.callPackage ./asio-cmake-module {};
+
  astuff-sensor-msgs = self.callPackage ./astuff-sensor-msgs {};
 
  automotive-autonomy-msgs = self.callPackage ./automotive-autonomy-msgs {};
@@ -145,6 +149,8 @@ self: super: {
  automotive-navigation-msgs = self.callPackage ./automotive-navigation-msgs {};
 
  automotive-platform-msgs = self.callPackage ./automotive-platform-msgs {};
+
+ aws-robomaker-small-warehouse-world = self.callPackage ./aws-robomaker-small-warehouse-world {};
 
  backward-ros = self.callPackage ./backward-ros {};
 
@@ -464,6 +470,8 @@ self: super: {
 
  gmock-vendor = self.callPackage ./gmock-vendor {};
 
+ google-benchmark-vendor = self.callPackage ./google-benchmark-vendor {};
+
  gps-msgs = self.callPackage ./gps-msgs {};
 
  gps-tools = self.callPackage ./gps-tools {};
@@ -471,6 +479,8 @@ self: super: {
  gps-umd = self.callPackage ./gps-umd {};
 
  gpsd-client = self.callPackage ./gpsd-client {};
+
+ graph-msgs = self.callPackage ./graph-msgs {};
 
  grasping-msgs = self.callPackage ./grasping-msgs {};
 
@@ -487,6 +497,8 @@ self: super: {
  hls-lfcd-lds-driver = self.callPackage ./hls-lfcd-lds-driver {};
 
  ibeo-msgs = self.callPackage ./ibeo-msgs {};
+
+ ifm3d-core = self.callPackage ./ifm3d-core {};
 
  image-common = self.callPackage ./image-common {};
 
@@ -513,6 +525,8 @@ self: super: {
  interactive-markers = self.callPackage ./interactive-markers {};
 
  intra-process-demo = self.callPackage ./intra-process-demo {};
+
+ io-context = self.callPackage ./io-context {};
 
  joint-state-broadcaster = self.callPackage ./joint-state-broadcaster {};
 
@@ -547,6 +561,8 @@ self: super: {
  lanelet2-core = self.callPackage ./lanelet2-core {};
 
  lanelet2-examples = self.callPackage ./lanelet2-examples {};
+
+ lanelet2-io = self.callPackage ./lanelet2-io {};
 
  lanelet2-maps = self.callPackage ./lanelet2-maps {};
 
@@ -642,7 +658,11 @@ self: super: {
 
  mavros-msgs = self.callPackage ./mavros-msgs {};
 
+ menge-vendor = self.callPackage ./menge-vendor {};
+
  message-filters = self.callPackage ./message-filters {};
+
+ micro-ros-msgs = self.callPackage ./micro-ros-msgs {};
 
  mimick-vendor = self.callPackage ./mimick-vendor {};
 
@@ -707,6 +727,8 @@ self: super: {
  moveit-servo = self.callPackage ./moveit-servo {};
 
  moveit-simple-controller-manager = self.callPackage ./moveit-simple-controller-manager {};
+
+ mppic = self.callPackage ./mppic {};
 
  mrt-cmake-modules = self.callPackage ./mrt-cmake-modules {};
 
@@ -810,9 +832,15 @@ self: super: {
 
  pal-gazebo-worlds = self.callPackage ./pal-gazebo-worlds {};
 
+ pal-statistics = self.callPackage ./pal-statistics {};
+
+ pal-statistics-msgs = self.callPackage ./pal-statistics-msgs {};
+
  pcl-conversions = self.callPackage ./pcl-conversions {};
 
  pcl-msgs = self.callPackage ./pcl-msgs {};
+
+ pcl-ros = self.callPackage ./pcl-ros {};
 
  pendulum-control = self.callPackage ./pendulum-control {};
 
@@ -940,6 +968,8 @@ self: super: {
 
  quaternion-operation = self.callPackage ./quaternion-operation {};
 
+ radar-msgs = self.callPackage ./radar-msgs {};
+
  random-numbers = self.callPackage ./random-numbers {};
 
  raptor-dbw-can = self.callPackage ./raptor-dbw-can {};
@@ -1027,6 +1057,86 @@ self: super: {
  realtime-tools = self.callPackage ./realtime-tools {};
 
  resource-retriever = self.callPackage ./resource-retriever {};
+
+ rmf-battery = self.callPackage ./rmf-battery {};
+
+ rmf-building-map-msgs = self.callPackage ./rmf-building-map-msgs {};
+
+ rmf-building-map-tools = self.callPackage ./rmf-building-map-tools {};
+
+ rmf-building-sim-common = self.callPackage ./rmf-building-sim-common {};
+
+ rmf-building-sim-gazebo-plugins = self.callPackage ./rmf-building-sim-gazebo-plugins {};
+
+ rmf-charger-msgs = self.callPackage ./rmf-charger-msgs {};
+
+ rmf-cmake-uncrustify = self.callPackage ./rmf-cmake-uncrustify {};
+
+ rmf-demos = self.callPackage ./rmf-demos {};
+
+ rmf-demos-assets = self.callPackage ./rmf-demos-assets {};
+
+ rmf-demos-dashboard-resources = self.callPackage ./rmf-demos-dashboard-resources {};
+
+ rmf-demos-gz = self.callPackage ./rmf-demos-gz {};
+
+ rmf-demos-ign = self.callPackage ./rmf-demos-ign {};
+
+ rmf-demos-maps = self.callPackage ./rmf-demos-maps {};
+
+ rmf-demos-tasks = self.callPackage ./rmf-demos-tasks {};
+
+ rmf-dispenser-msgs = self.callPackage ./rmf-dispenser-msgs {};
+
+ rmf-door-msgs = self.callPackage ./rmf-door-msgs {};
+
+ rmf-fleet-adapter = self.callPackage ./rmf-fleet-adapter {};
+
+ rmf-fleet-adapter-python = self.callPackage ./rmf-fleet-adapter-python {};
+
+ rmf-fleet-msgs = self.callPackage ./rmf-fleet-msgs {};
+
+ rmf-ingestor-msgs = self.callPackage ./rmf-ingestor-msgs {};
+
+ rmf-lift-msgs = self.callPackage ./rmf-lift-msgs {};
+
+ rmf-robot-sim-common = self.callPackage ./rmf-robot-sim-common {};
+
+ rmf-robot-sim-gazebo-plugins = self.callPackage ./rmf-robot-sim-gazebo-plugins {};
+
+ rmf-task = self.callPackage ./rmf-task {};
+
+ rmf-task-msgs = self.callPackage ./rmf-task-msgs {};
+
+ rmf-task-ros2 = self.callPackage ./rmf-task-ros2 {};
+
+ rmf-traffic = self.callPackage ./rmf-traffic {};
+
+ rmf-traffic-editor = self.callPackage ./rmf-traffic-editor {};
+
+ rmf-traffic-editor-assets = self.callPackage ./rmf-traffic-editor-assets {};
+
+ rmf-traffic-editor-test-maps = self.callPackage ./rmf-traffic-editor-test-maps {};
+
+ rmf-traffic-msgs = self.callPackage ./rmf-traffic-msgs {};
+
+ rmf-traffic-ros2 = self.callPackage ./rmf-traffic-ros2 {};
+
+ rmf-utils = self.callPackage ./rmf-utils {};
+
+ rmf-visualization = self.callPackage ./rmf-visualization {};
+
+ rmf-visualization-building-systems = self.callPackage ./rmf-visualization-building-systems {};
+
+ rmf-visualization-fleet-states = self.callPackage ./rmf-visualization-fleet-states {};
+
+ rmf-visualization-msgs = self.callPackage ./rmf-visualization-msgs {};
+
+ rmf-visualization-rviz2-plugins = self.callPackage ./rmf-visualization-rviz2-plugins {};
+
+ rmf-visualization-schedule = self.callPackage ./rmf-visualization-schedule {};
+
+ rmf-workcell-msgs = self.callPackage ./rmf-workcell-msgs {};
 
  rmw = self.callPackage ./rmw {};
 
@@ -1268,6 +1378,8 @@ self: super: {
 
  rqt-robot-steering = self.callPackage ./rqt-robot-steering {};
 
+ rqt-runtime-monitor = self.callPackage ./rqt-runtime-monitor {};
+
  rqt-service-caller = self.callPackage ./rqt-service-caller {};
 
  rqt-shell = self.callPackage ./rqt-shell {};
@@ -1346,6 +1458,8 @@ self: super: {
 
  sophus = self.callPackage ./sophus {};
 
+ spacenav = self.callPackage ./spacenav {};
+
  spdlog-vendor = self.callPackage ./spdlog-vendor {};
 
  sqlite3-vendor = self.callPackage ./sqlite3-vendor {};
@@ -1365,6 +1479,10 @@ self: super: {
  stereo-image-proc = self.callPackage ./stereo-image-proc {};
 
  stereo-msgs = self.callPackage ./stereo-msgs {};
+
+ stubborn-buddies = self.callPackage ./stubborn-buddies {};
+
+ stubborn-buddies-msgs = self.callPackage ./stubborn-buddies-msgs {};
 
  swri-console-util = self.callPackage ./swri-console-util {};
 
@@ -1417,8 +1535,6 @@ self: super: {
  test-launch-system-modes = self.callPackage ./test-launch-system-modes {};
 
  test-msgs = self.callPackage ./test-msgs {};
-
- test-osrf-testing-tools-cpp = self.callPackage ./test-osrf-testing-tools-cpp {};
 
  test-rmw-implementation = self.callPackage ./test-rmw-implementation {};
 
@@ -1500,6 +1616,8 @@ self: super: {
 
  turtlesim = self.callPackage ./turtlesim {};
 
+ tvm-vendor = self.callPackage ./tvm-vendor {};
+
  twist-mux = self.callPackage ./twist-mux {};
 
  twist-stamper = self.callPackage ./twist-stamper {};
@@ -1546,13 +1664,19 @@ self: super: {
 
  velodyne = self.callPackage ./velodyne {};
 
+ velodyne-description = self.callPackage ./velodyne-description {};
+
  velodyne-driver = self.callPackage ./velodyne-driver {};
+
+ velodyne-gazebo-plugins = self.callPackage ./velodyne-gazebo-plugins {};
 
  velodyne-laserscan = self.callPackage ./velodyne-laserscan {};
 
  velodyne-msgs = self.callPackage ./velodyne-msgs {};
 
  velodyne-pointcloud = self.callPackage ./velodyne-pointcloud {};
+
+ velodyne-simulator = self.callPackage ./velodyne-simulator {};
 
  vision-msgs = self.callPackage ./vision-msgs {};
 
@@ -1565,6 +1689,8 @@ self: super: {
  vrxperience-msgs = self.callPackage ./vrxperience-msgs {};
 
  warehouse-ros = self.callPackage ./warehouse-ros {};
+
+ warehouse-ros-sqlite = self.callPackage ./warehouse-ros-sqlite {};
 
  webots-ros2 = self.callPackage ./webots-ros2 {};
 
@@ -1581,6 +1707,8 @@ self: super: {
  webots-ros2-epuck = self.callPackage ./webots-ros2-epuck {};
 
  webots-ros2-examples = self.callPackage ./webots-ros2-examples {};
+
+ webots-ros2-importer = self.callPackage ./webots-ros2-importer {};
 
  webots-ros2-mavic = self.callPackage ./webots-ros2-mavic {};
 

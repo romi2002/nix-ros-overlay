@@ -5,12 +5,12 @@
 { lib, buildRosPackage, fetchurl, bota-signal-handler, bota-worker, catkin, gtest, roscpp, rosunit }:
 buildRosPackage {
   pname = "ros-noetic-bota-node";
-  version = "0.6.0-r3";
+  version = "0.6.1-r2";
 
   src = fetchurl {
-    url = "https://gitlab.com/botasys/bota_driver-release/-/archive/release/noetic/bota_node/0.6.0-3/bota_driver-release-release-noetic-bota_node-0.6.0-3.tar.gz";
-    name = "bota_driver-release-release-noetic-bota_node-0.6.0-3.tar.gz";
-    sha256 = "2dceca17011829a9bbbb383efc59b006b66f9e5e1fcd4042e47d5ecd00f80752";
+    url = "https://gitlab.com/botasys/bota_driver-release/-/archive/release/noetic/bota_node/0.6.1-2/bota_driver-release-release-noetic-bota_node-0.6.1-2.tar.gz";
+    name = "bota_driver-release-release-noetic-bota_node-0.6.1-2.tar.gz";
+    sha256 = "3972167a99dec308b955c57ab11a0a8c93dcecf4405a5cad982ee098bf0d254a";
   };
 
   buildType = "catkin";

@@ -50,6 +50,8 @@ self: super: {
 
  arbotix-sensors = self.callPackage ./arbotix-sensors {};
 
+ aruco-detect = self.callPackage ./aruco-detect {};
+
  assimp-devel = self.callPackage ./assimp-devel {};
 
  assisted-teleop = self.callPackage ./assisted-teleop {};
@@ -124,6 +126,8 @@ self: super: {
 
  bota-driver = self.callPackage ./bota-driver {};
 
+ bota-driver-testing = self.callPackage ./bota-driver-testing {};
+
  bota-node = self.callPackage ./bota-node {};
 
  bota-signal-handler = self.callPackage ./bota-signal-handler {};
@@ -188,7 +192,11 @@ self: super: {
 
  clear-costmap-recovery = self.callPackage ./clear-costmap-recovery {};
 
+ clober-msgs = self.callPackage ./clober-msgs {};
+
  cmake-modules = self.callPackage ./cmake-modules {};
+
+ cmvision = self.callPackage ./cmvision {};
 
  cnpy = self.callPackage ./cnpy {};
 
@@ -544,6 +552,8 @@ self: super: {
 
  drone-assets = self.callPackage ./drone-assets {};
 
+ drone-circuit-assets = self.callPackage ./drone-circuit-assets {};
+
  drone-wrapper = self.callPackage ./drone-wrapper {};
 
  dual-quaternions = self.callPackage ./dual-quaternions {};
@@ -796,6 +806,8 @@ self: super: {
 
  fkie-multimaster-msgs = self.callPackage ./fkie-multimaster-msgs {};
 
+ fkie-node-manager = self.callPackage ./fkie-node-manager {};
+
  fkie-node-manager-daemon = self.callPackage ./fkie-node-manager-daemon {};
 
  fkie-potree-rviz-plugin = self.callPackage ./fkie-potree-rviz-plugin {};
@@ -856,11 +868,17 @@ self: super: {
 
  fuse = self.callPackage ./fuse {};
 
+ fuse-constraints = self.callPackage ./fuse-constraints {};
+
  fuse-core = self.callPackage ./fuse-core {};
 
  fuse-doc = self.callPackage ./fuse-doc {};
 
+ fuse-graphs = self.callPackage ./fuse-graphs {};
+
  fuse-loss = self.callPackage ./fuse-loss {};
+
+ fuse-models = self.callPackage ./fuse-models {};
 
  fuse-msgs = self.callPackage ./fuse-msgs {};
 
@@ -1058,9 +1076,27 @@ self: super: {
 
  hokuyo3d = self.callPackage ./hokuyo3d {};
 
+ husky-control = self.callPackage ./husky-control {};
+
+ husky-description = self.callPackage ./husky-description {};
+
+ husky-desktop = self.callPackage ./husky-desktop {};
+
+ husky-gazebo = self.callPackage ./husky-gazebo {};
+
+ husky-msgs = self.callPackage ./husky-msgs {};
+
+ husky-navigation = self.callPackage ./husky-navigation {};
+
+ husky-simulator = self.callPackage ./husky-simulator {};
+
+ husky-viz = self.callPackage ./husky-viz {};
+
  ibeo-msgs = self.callPackage ./ibeo-msgs {};
 
  ifm3d = self.callPackage ./ifm3d {};
+
+ ifm3d-core = self.callPackage ./ifm3d-core {};
 
  image-cb-detector = self.callPackage ./image-cb-detector {};
 
@@ -1151,6 +1187,16 @@ self: super: {
  ixblue-ins-msgs = self.callPackage ./ixblue-ins-msgs {};
 
  ixblue-stdbin-decoder = self.callPackage ./ixblue-stdbin-decoder {};
+
+ jackal-control = self.callPackage ./jackal-control {};
+
+ jackal-description = self.callPackage ./jackal-description {};
+
+ jackal-msgs = self.callPackage ./jackal-msgs {};
+
+ jackal-navigation = self.callPackage ./jackal-navigation {};
+
+ jackal-tutorials = self.callPackage ./jackal-tutorials {};
 
  jderobot-assets = self.callPackage ./jderobot-assets {};
 
@@ -1260,6 +1306,8 @@ self: super: {
 
  lanelet2-examples = self.callPackage ./lanelet2-examples {};
 
+ lanelet2-io = self.callPackage ./lanelet2-io {};
+
  lanelet2-maps = self.callPackage ./lanelet2-maps {};
 
  lanelet2-projection = self.callPackage ./lanelet2-projection {};
@@ -1302,11 +1350,17 @@ self: super: {
 
  leo = self.callPackage ./leo {};
 
+ leo-bringup = self.callPackage ./leo-bringup {};
+
  leo-description = self.callPackage ./leo-description {};
 
  leo-desktop = self.callPackage ./leo-desktop {};
 
+ leo-fw = self.callPackage ./leo-fw {};
+
  leo-gazebo = self.callPackage ./leo-gazebo {};
+
+ leo-robot = self.callPackage ./leo-robot {};
 
  leo-simulator = self.callPackage ./leo-simulator {};
 
@@ -1339,6 +1393,8 @@ self: super: {
  librviz-tutorial = self.callPackage ./librviz-tutorial {};
 
  libsiftfast = self.callPackage ./libsiftfast {};
+
+ libuvc-camera = self.callPackage ./libuvc-camera {};
 
  libuvc-ros = self.callPackage ./libuvc-ros {};
 
@@ -1458,6 +1514,12 @@ self: super: {
 
  microstrain-3dmgx2-imu = self.callPackage ./microstrain-3dmgx2-imu {};
 
+ microstrain-inertial-driver = self.callPackage ./microstrain-inertial-driver {};
+
+ microstrain-inertial-examples = self.callPackage ./microstrain-inertial-examples {};
+
+ microstrain-inertial-msgs = self.callPackage ./microstrain-inertial-msgs {};
+
  mini-maxwell = self.callPackage ./mini-maxwell {};
 
  mir-actions = self.callPackage ./mir-actions {};
@@ -1513,6 +1575,8 @@ self: super: {
  moveit-kinematics = self.callPackage ./moveit-kinematics {};
 
  moveit-msgs = self.callPackage ./moveit-msgs {};
+
+ moveit-opw-kinematics-plugin = self.callPackage ./moveit-opw-kinematics-plugin {};
 
  moveit-planners = self.callPackage ./moveit-planners {};
 
@@ -1581,6 +1645,8 @@ self: super: {
  mpc-local-planner-examples = self.callPackage ./mpc-local-planner-examples {};
 
  mpc-local-planner-msgs = self.callPackage ./mpc-local-planner-msgs {};
+
+ mqtt-bridge = self.callPackage ./mqtt-bridge {};
 
  mrpt-msgs = self.callPackage ./mrpt-msgs {};
 
@@ -1775,6 +1841,8 @@ self: super: {
  phidgets-accelerometer = self.callPackage ./phidgets-accelerometer {};
 
  phidgets-analog-inputs = self.callPackage ./phidgets-analog-inputs {};
+
+ phidgets-analog-outputs = self.callPackage ./phidgets-analog-outputs {};
 
  phidgets-api = self.callPackage ./phidgets-api {};
 
@@ -2004,6 +2072,28 @@ self: super: {
 
  python-qt-binding = self.callPackage ./python-qt-binding {};
 
+ qb-chain = self.callPackage ./qb-chain {};
+
+ qb-chain-control = self.callPackage ./qb-chain-control {};
+
+ qb-chain-controllers = self.callPackage ./qb-chain-controllers {};
+
+ qb-chain-description = self.callPackage ./qb-chain-description {};
+
+ qb-chain-msgs = self.callPackage ./qb-chain-msgs {};
+
+ qb-hand = self.callPackage ./qb-hand {};
+
+ qb-hand-control = self.callPackage ./qb-hand-control {};
+
+ qb-hand-description = self.callPackage ./qb-hand-description {};
+
+ qb-move = self.callPackage ./qb-move {};
+
+ qb-move-control = self.callPackage ./qb-move-control {};
+
+ qb-move-description = self.callPackage ./qb-move-description {};
+
  qpoases-vendor = self.callPackage ./qpoases-vendor {};
 
  qt-dotgraph = self.callPackage ./qt-dotgraph {};
@@ -2078,7 +2168,29 @@ self: super: {
 
  rgbd-launch = self.callPackage ./rgbd-launch {};
 
+ rm-calibration-controllers = self.callPackage ./rm-calibration-controllers {};
+
+ rm-chassis-controllers = self.callPackage ./rm-chassis-controllers {};
+
+ rm-common = self.callPackage ./rm-common {};
+
+ rm-control = self.callPackage ./rm-control {};
+
  rm-controllers = self.callPackage ./rm-controllers {};
+
+ rm-dbus = self.callPackage ./rm-dbus {};
+
+ rm-description = self.callPackage ./rm-description {};
+
+ rm-gazebo = self.callPackage ./rm-gazebo {};
+
+ rm-gimbal-controllers = self.callPackage ./rm-gimbal-controllers {};
+
+ rm-hw = self.callPackage ./rm-hw {};
+
+ rm-msgs = self.callPackage ./rm-msgs {};
+
+ rm-shooter-controllers = self.callPackage ./rm-shooter-controllers {};
 
  robot = self.callPackage ./robot {};
 
@@ -2107,6 +2219,8 @@ self: super: {
  robot-navigation = self.callPackage ./robot-navigation {};
 
  robot-self-filter = self.callPackage ./robot-self-filter {};
+
+ robot-state-controller = self.callPackage ./robot-state-controller {};
 
  robot-state-publisher = self.callPackage ./robot-state-publisher {};
 
@@ -2278,6 +2392,8 @@ self: super: {
 
  rospatlite = self.callPackage ./rospatlite {};
 
+ rospilot = self.callPackage ./rospilot {};
+
  rosping = self.callPackage ./rosping {};
 
  rospy = self.callPackage ./rospy {};
@@ -2323,6 +2439,8 @@ self: super: {
  rostime = self.callPackage ./rostime {};
 
  rostopic = self.callPackage ./rostopic {};
+
+ rostwitter = self.callPackage ./rostwitter {};
 
  rosunit = self.callPackage ./rosunit {};
 
@@ -2432,6 +2550,8 @@ self: super: {
 
  rviz = self.callPackage ./rviz {};
 
+ rviz-animated-view-controller = self.callPackage ./rviz-animated-view-controller {};
+
  rviz-imu-plugin = self.callPackage ./rviz-imu-plugin {};
 
  rviz-mesh-plugin = self.callPackage ./rviz-mesh-plugin {};
@@ -2451,6 +2571,8 @@ self: super: {
  safety-limiter-msgs = self.callPackage ./safety-limiter-msgs {};
 
  sainsmart-relay-usb = self.callPackage ./sainsmart-relay-usb {};
+
+ sbg-driver = self.callPackage ./sbg-driver {};
 
  sbpl = self.callPackage ./sbpl {};
 
@@ -2558,6 +2680,8 @@ self: super: {
 
  sot-tools = self.callPackage ./sot-tools {};
 
+ spacenav-node = self.callPackage ./spacenav-node {};
+
  sparse-bundle-adjustment = self.callPackage ./sparse-bundle-adjustment {};
 
  speech-recognition-msgs = self.callPackage ./speech-recognition-msgs {};
@@ -2643,6 +2767,8 @@ self: super: {
  teleop-twist-joy = self.callPackage ./teleop-twist-joy {};
 
  teleop-twist-keyboard = self.callPackage ./teleop-twist-keyboard {};
+
+ tello-driver = self.callPackage ./tello-driver {};
 
  tesseract-common = self.callPackage ./tesseract-common {};
 
@@ -2919,6 +3045,8 @@ self: super: {
  wave-front-planner = self.callPackage ./wave-front-planner {};
 
  web-video-server = self.callPackage ./web-video-server {};
+
+ webkit-dependency = self.callPackage ./webkit-dependency {};
 
  webots-ros = self.callPackage ./webots-ros {};
 

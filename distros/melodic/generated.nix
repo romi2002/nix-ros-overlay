@@ -216,6 +216,8 @@ self: super: {
 
  bota-driver = self.callPackage ./bota-driver {};
 
+ bota-driver-testing = self.callPackage ./bota-driver-testing {};
+
  bota-node = self.callPackage ./bota-node {};
 
  bota-signal-handler = self.callPackage ./bota-signal-handler {};
@@ -604,6 +606,8 @@ self: super: {
 
  cpr-multimaster-tools = self.callPackage ./cpr-multimaster-tools {};
 
+ cpu-temperature-diagnostics = self.callPackage ./cpu-temperature-diagnostics {};
+
  criutils = self.callPackage ./criutils {};
 
  csm = self.callPackage ./csm {};
@@ -930,6 +934,8 @@ self: super: {
 
  eml = self.callPackage ./eml {};
 
+ end-effector = self.callPackage ./end-effector {};
+
  er-public-msgs = self.callPackage ./er-public-msgs {};
 
  ethercat-grant = self.callPackage ./ethercat-grant {};
@@ -1166,11 +1172,17 @@ self: super: {
 
  fuse = self.callPackage ./fuse {};
 
+ fuse-constraints = self.callPackage ./fuse-constraints {};
+
  fuse-core = self.callPackage ./fuse-core {};
 
  fuse-doc = self.callPackage ./fuse-doc {};
 
+ fuse-graphs = self.callPackage ./fuse-graphs {};
+
  fuse-loss = self.callPackage ./fuse-loss {};
+
+ fuse-models = self.callPackage ./fuse-models {};
 
  fuse-msgs = self.callPackage ./fuse-msgs {};
 
@@ -1464,6 +1476,8 @@ self: super: {
 
  ifm3d = self.callPackage ./ifm3d {};
 
+ ifm3d-core = self.callPackage ./ifm3d-core {};
+
  igvc-self-drive-description = self.callPackage ./igvc-self-drive-description {};
 
  igvc-self-drive-gazebo = self.callPackage ./igvc-self-drive-gazebo {};
@@ -1539,6 +1553,8 @@ self: super: {
  industrial-trajectory-filters = self.callPackage ./industrial-trajectory-filters {};
 
  industrial-utils = self.callPackage ./industrial-utils {};
+
+ inorbit-republisher = self.callPackage ./inorbit-republisher {};
 
  interactive-marker-proxy = self.callPackage ./interactive-marker-proxy {};
 
@@ -1781,6 +1797,8 @@ self: super: {
  lanelet2-core = self.callPackage ./lanelet2-core {};
 
  lanelet2-examples = self.callPackage ./lanelet2-examples {};
+
+ lanelet2-io = self.callPackage ./lanelet2-io {};
 
  lanelet2-maps = self.callPackage ./lanelet2-maps {};
 
@@ -2085,6 +2103,12 @@ self: super: {
  message-to-tf = self.callPackage ./message-to-tf {};
 
  microstrain-3dmgx2-imu = self.callPackage ./microstrain-3dmgx2-imu {};
+
+ microstrain-inertial-driver = self.callPackage ./microstrain-inertial-driver {};
+
+ microstrain-inertial-examples = self.callPackage ./microstrain-inertial-examples {};
+
+ microstrain-inertial-msgs = self.callPackage ./microstrain-inertial-msgs {};
 
  microstrain-mips = self.callPackage ./microstrain-mips {};
 
@@ -2672,6 +2696,8 @@ self: super: {
 
  perception-pcl = self.callPackage ./perception-pcl {};
 
+ pf-driver = self.callPackage ./pf-driver {};
+
  pheeno-ros-description = self.callPackage ./pheeno-ros-description {};
 
  phidgets-api = self.callPackage ./phidgets-api {};
@@ -3031,6 +3057,8 @@ self: super: {
  qt-gui-cpp = self.callPackage ./qt-gui-cpp {};
 
  qt-gui-py-common = self.callPackage ./qt-gui-py-common {};
+
+ qt-paramedit = self.callPackage ./qt-paramedit {};
 
  qt-qmake = self.callPackage ./qt-qmake {};
 
@@ -3396,6 +3424,8 @@ self: super: {
 
  rosdiagnostic = self.callPackage ./rosdiagnostic {};
 
+ rosee-msg = self.callPackage ./rosee-msg {};
+
  rosemacs = self.callPackage ./rosemacs {};
 
  roseus = self.callPackage ./roseus {};
@@ -3602,6 +3632,8 @@ self: super: {
 
  rqt-nav-view = self.callPackage ./rqt-nav-view {};
 
+ rqt-paramedit = self.callPackage ./rqt-paramedit {};
+
  rqt-play-motion-builder = self.callPackage ./rqt-play-motion-builder {};
 
  rqt-plot = self.callPackage ./rqt-plot {};
@@ -3699,6 +3731,8 @@ self: super: {
  ruckig = self.callPackage ./ruckig {};
 
  rviz = self.callPackage ./rviz {};
+
+ rviz-animated-view-controller = self.callPackage ./rviz-animated-view-controller {};
 
  rviz-imu-plugin = self.callPackage ./rviz-imu-plugin {};
 
@@ -3870,6 +3904,8 @@ self: super: {
 
  sot-tools = self.callPackage ./sot-tools {};
 
+ spacenav-node = self.callPackage ./spacenav-node {};
+
  sparse-bundle-adjustment = self.callPackage ./sparse-bundle-adjustment {};
 
  spatio-temporal-voxel-layer = self.callPackage ./spatio-temporal-voxel-layer {};
@@ -3973,6 +4009,8 @@ self: super: {
  teleop-twist-joy = self.callPackage ./teleop-twist-joy {};
 
  teleop-twist-keyboard = self.callPackage ./teleop-twist-keyboard {};
+
+ tello-driver = self.callPackage ./tello-driver {};
 
  teraranger = self.callPackage ./teraranger {};
 
